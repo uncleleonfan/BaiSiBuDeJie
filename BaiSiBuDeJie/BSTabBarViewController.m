@@ -79,6 +79,12 @@
 ////    [vc3.tabBarItem setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
 //    [self addChildViewController:vc3];
 //
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
+    [btn setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateSelected];
+    btn.bounds = CGRectMake(0, 0, btn.currentBackgroundImage.size.width, btn.currentBackgroundImage.size.height);
+    btn.center = CGPointMake(self.tabBar.frame.size.width / 2, self.tabBar.frame.size.height / 2);
+    [self.tabBar addSubview:btn];
 }
 
 - (void)setupChildVCWithTitle:(NSString*) title image:(NSString*) image selectImage:(NSString*) selectedImage
