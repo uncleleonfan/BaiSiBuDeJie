@@ -12,6 +12,7 @@
 		99917B3821BE042F00F4C3D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99917B3621BE042F00F4C3D9 /* LaunchScreen.storyboard */; };
 		99917B3B21BE042F00F4C3D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99917B3A21BE042F00F4C3D9 /* main.m */; };
 		99917B4221BE044A00F4C3D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99917B4121BE044900F4C3D9 /* Images.xcassets */; };
+		99D1398E21C0DF9300EEB428 /* BSTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D1398D21C0DF9300EEB428 /* BSTabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,8 @@
 		99917B3921BE042F00F4C3D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99917B3A21BE042F00F4C3D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		99917B4121BE044900F4C3D9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		99D1398C21C0DF9300EEB428 /* BSTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTabBarViewController.h; sourceTree = "<group>"; };
+		99D1398D21C0DF9300EEB428 /* BSTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSTabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,8 @@
 				99917B2C21BE042D00F4C3D9 /* AppDelegate.m */,
 				99917B3921BE042F00F4C3D9 /* Info.plist */,
 				99917B3A21BE042F00F4C3D9 /* main.m */,
+				99D1398C21C0DF9300EEB428 /* BSTabBarViewController.h */,
+				99D1398D21C0DF9300EEB428 /* BSTabBarViewController.m */,
 			);
 			path = BaiSiBuDeJie;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 		99917B2021BE042D00F4C3D9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = BS;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = leon;
 				TargetAttributes = {
@@ -144,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99D1398E21C0DF9300EEB428 /* BSTabBarViewController.m in Sources */,
 				99917B3B21BE042F00F4C3D9 /* main.m in Sources */,
 				99917B2D21BE042D00F4C3D9 /* AppDelegate.m in Sources */,
 			);
