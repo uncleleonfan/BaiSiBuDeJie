@@ -13,6 +13,10 @@
 		99917B3B21BE042F00F4C3D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99917B3A21BE042F00F4C3D9 /* main.m */; };
 		99917B4221BE044A00F4C3D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99917B4121BE044900F4C3D9 /* Images.xcassets */; };
 		99D1398E21C0DF9300EEB428 /* BSTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D1398D21C0DF9300EEB428 /* BSTabBarViewController.m */; };
+		99D1399121C0F01400EEB428 /* BSEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D1399021C0F01400EEB428 /* BSEssenceViewController.m */; };
+		99D1399421C0F03400EEB428 /* BSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D1399321C0F03400EEB428 /* BSMeViewController.m */; };
+		99D1399721C0F04A00EEB428 /* BSFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D1399621C0F04A00EEB428 /* BSFriendTrendsViewController.m */; };
+		99D1399A21C0F05900EEB428 /* BSNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D1399921C0F05900EEB428 /* BSNewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		99917B4121BE044900F4C3D9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		99D1398C21C0DF9300EEB428 /* BSTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTabBarViewController.h; sourceTree = "<group>"; };
 		99D1398D21C0DF9300EEB428 /* BSTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSTabBarViewController.m; sourceTree = "<group>"; };
+		99D1398F21C0F01400EEB428 /* BSEssenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSEssenceViewController.h; sourceTree = "<group>"; };
+		99D1399021C0F01400EEB428 /* BSEssenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSEssenceViewController.m; sourceTree = "<group>"; };
+		99D1399221C0F03400EEB428 /* BSMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSMeViewController.h; sourceTree = "<group>"; };
+		99D1399321C0F03400EEB428 /* BSMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSMeViewController.m; sourceTree = "<group>"; };
+		99D1399521C0F04A00EEB428 /* BSFriendTrendsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSFriendTrendsViewController.h; sourceTree = "<group>"; };
+		99D1399621C0F04A00EEB428 /* BSFriendTrendsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSFriendTrendsViewController.m; sourceTree = "<group>"; };
+		99D1399821C0F05900EEB428 /* BSNewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSNewViewController.h; sourceTree = "<group>"; };
+		99D1399921C0F05900EEB428 /* BSNewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSNewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +77,14 @@
 				99917B3A21BE042F00F4C3D9 /* main.m */,
 				99D1398C21C0DF9300EEB428 /* BSTabBarViewController.h */,
 				99D1398D21C0DF9300EEB428 /* BSTabBarViewController.m */,
+				99D1398F21C0F01400EEB428 /* BSEssenceViewController.h */,
+				99D1399021C0F01400EEB428 /* BSEssenceViewController.m */,
+				99D1399221C0F03400EEB428 /* BSMeViewController.h */,
+				99D1399321C0F03400EEB428 /* BSMeViewController.m */,
+				99D1399521C0F04A00EEB428 /* BSFriendTrendsViewController.h */,
+				99D1399621C0F04A00EEB428 /* BSFriendTrendsViewController.m */,
+				99D1399821C0F05900EEB428 /* BSNewViewController.h */,
+				99D1399921C0F05900EEB428 /* BSNewViewController.m */,
 			);
 			path = BaiSiBuDeJie;
 			sourceTree = "<group>";
@@ -151,7 +171,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				99D1398E21C0DF9300EEB428 /* BSTabBarViewController.m in Sources */,
+				99D1399721C0F04A00EEB428 /* BSFriendTrendsViewController.m in Sources */,
+				99D1399A21C0F05900EEB428 /* BSNewViewController.m in Sources */,
 				99917B3B21BE042F00F4C3D9 /* main.m in Sources */,
+				99D1399121C0F01400EEB428 /* BSEssenceViewController.m in Sources */,
+				99D1399421C0F03400EEB428 /* BSMeViewController.m in Sources */,
 				99917B2D21BE042D00F4C3D9 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
