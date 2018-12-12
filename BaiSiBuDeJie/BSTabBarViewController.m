@@ -113,7 +113,9 @@
     //    [vc0.tabBarItem setTitleTextAttributes:attrs forState:UIControlStateNormal];
     //    [vc0.tabBarItem setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
     vc.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(100)/100.0 green:arc4random_uniform(100)/100.0 blue:arc4random_uniform(100)/100 alpha:1];
-    [self addChildViewController:vc];
+    
+    UINavigationController *navigationVC = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self addChildViewController:navigationVC];
 }
 
 @end

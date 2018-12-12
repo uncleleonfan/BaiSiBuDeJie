@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign) CGFloat height;
 @property(nonatomic, assign) CGFloat x;
 @property(nonatomic, assign) CGFloat y;
+@property(nonatomic, assign) CGSize size;
 
 /*在分类里面声明property,只会生成方法的声明，不会生成方法的实现和带_的成员变量*/
 

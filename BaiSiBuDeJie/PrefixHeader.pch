@@ -13,4 +13,10 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #import "UIView+BSExtension.h"
 
+#ifdef DEBUG
+#define BSLog(...) NSLog(__VA_ARGS__)
+#else
+#define BSLog(...)
+#endif
+
 #endif /* PrefixHeader_pch */
