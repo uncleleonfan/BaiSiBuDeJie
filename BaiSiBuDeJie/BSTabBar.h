@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BSTabBar : UITabBar
 
+@property(nonatomic, weak) UIButton* btn;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -11,6 +11,7 @@
 #import "BSNewViewController.h"
 #import "BSEssenceViewController.h"
 #import "BSFriendTrendsViewController.h"
+#import "BSTabBar.h"
 
 @interface BSTabBarViewController ()
 
@@ -36,7 +37,7 @@
     [self setupChildVC:[[BSNewViewController alloc] init] title:@"新帖" image:@"tabBar_new_icon" selectImage:@"tabBar_new_click_icon"];
     [self setupChildVC:[[BSFriendTrendsViewController alloc] init] title:@"关注" image:@"tabBar_friendTrends_icon" selectImage:@"tabBar_friendTrends_click_icon"];
     [self setupChildVC:[[BSMeViewController alloc] init] title:@"我" image:@"tabBar_me_icon" selectImage:@"tabBar_me_click_icon"];
-    
+        
 //    [self setupChildVCWithTitle:@"精华" image:@"tabBar_essence_icon" selectImage:@"tabBar_essence_click_icon"];
 //    UIViewController *vc0 = [[UIViewController alloc] init];
 //    vc0.view.backgroundColor = [UIColor redColor];
@@ -79,12 +80,12 @@
 ////    [vc3.tabBarItem setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
 //    [self addChildViewController:vc3];
 //
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
-    [btn setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateSelected];
-    btn.bounds = CGRectMake(0, 0, btn.currentBackgroundImage.size.width, btn.currentBackgroundImage.size.height);
-    btn.center = CGPointMake(self.tabBar.frame.size.width / 2, self.tabBar.frame.size.height / 2);
-    [self.tabBar addSubview:btn];
+//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [btn setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
+//    [btn setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateSelected];
+//    btn.bounds = CGRectMake(0, 0, btn.currentBackgroundImage.size.width, btn.currentBackgroundImage.size.height);
+//    btn.center = CGPointMake(self.tabBar.frame.size.width / 2, self.tabBar.frame.size.height / 2);
+//    [self.tabBar addSubview:btn];
 }
 
 - (void)setupChildVCWithTitle:(NSString*) title image:(NSString*) image selectImage:(NSString*) selectedImage
