@@ -18,6 +18,7 @@
 		99D1399721C0F04A00EEB428 /* BSFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D1399621C0F04A00EEB428 /* BSFriendTrendsViewController.m */; };
 		99D1399A21C0F05900EEB428 /* BSNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D1399921C0F05900EEB428 /* BSNewViewController.m */; };
 		99D1399D21C0F5E400EEB428 /* BSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D1399C21C0F5E400EEB428 /* BSTabBar.m */; };
+		99D139A021C0FC5900EEB428 /* UIView+BSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D1399F21C0FC5900EEB428 /* UIView+BSExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,9 @@
 		99D1399921C0F05900EEB428 /* BSNewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSNewViewController.m; sourceTree = "<group>"; };
 		99D1399B21C0F5E400EEB428 /* BSTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTabBar.h; sourceTree = "<group>"; };
 		99D1399C21C0F5E400EEB428 /* BSTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSTabBar.m; sourceTree = "<group>"; };
+		99D1399E21C0FC5900EEB428 /* UIView+BSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+BSExtension.h"; sourceTree = "<group>"; };
+		99D1399F21C0FC5900EEB428 /* UIView+BSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+BSExtension.m"; sourceTree = "<group>"; };
+		99D139A121C0FDC300EEB428 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,9 @@
 				99D1399921C0F05900EEB428 /* BSNewViewController.m */,
 				99D1399B21C0F5E400EEB428 /* BSTabBar.h */,
 				99D1399C21C0F5E400EEB428 /* BSTabBar.m */,
+				99D1399E21C0FC5900EEB428 /* UIView+BSExtension.h */,
+				99D1399F21C0FC5900EEB428 /* UIView+BSExtension.m */,
+				99D139A121C0FDC300EEB428 /* PrefixHeader.pch */,
 			);
 			path = BaiSiBuDeJie;
 			sourceTree = "<group>";
@@ -180,6 +187,7 @@
 				99D1399A21C0F05900EEB428 /* BSNewViewController.m in Sources */,
 				99917B3B21BE042F00F4C3D9 /* main.m in Sources */,
 				99D1399121C0F01400EEB428 /* BSEssenceViewController.m in Sources */,
+				99D139A021C0FC5900EEB428 /* UIView+BSExtension.m in Sources */,
 				99D1399421C0F03400EEB428 /* BSMeViewController.m in Sources */,
 				99D1399D21C0F5E400EEB428 /* BSTabBar.m in Sources */,
 				99917B2D21BE042D00F4C3D9 /* AppDelegate.m in Sources */,
@@ -319,6 +327,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 735FD6WCKP;
+				GCC_PREFIX_HEADER = /Users/byex/Desktop/BaiSiBuDeJie/BaiSiBuDeJie/PrefixHeader.pch;
 				INFOPLIST_FILE = BaiSiBuDeJie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -337,6 +346,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 735FD6WCKP;
+				GCC_PREFIX_HEADER = /Users/byex/Desktop/BaiSiBuDeJie/BaiSiBuDeJie/PrefixHeader.pch;
 				INFOPLIST_FILE = BaiSiBuDeJie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

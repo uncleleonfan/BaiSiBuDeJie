@@ -37,6 +37,9 @@
     [self setupChildVC:[[BSNewViewController alloc] init] title:@"新帖" image:@"tabBar_new_icon" selectImage:@"tabBar_new_click_icon"];
     [self setupChildVC:[[BSFriendTrendsViewController alloc] init] title:@"关注" image:@"tabBar_friendTrends_icon" selectImage:@"tabBar_friendTrends_click_icon"];
     [self setupChildVC:[[BSMeViewController alloc] init] title:@"我" image:@"tabBar_me_icon" selectImage:@"tabBar_me_click_icon"];
+    
+    //tabBar是readonly 使用kvc形式赋值
+    [self setValue: [[BSTabBar alloc] init] forKey:@"tabBar"];
         
 //    [self setupChildVCWithTitle:@"精华" image:@"tabBar_essence_icon" selectImage:@"tabBar_essence_click_icon"];
 //    UIViewController *vc0 = [[UIViewController alloc] init];
