@@ -94,7 +94,6 @@
 - (void)setupChildVCWithTitle:(NSString*) title image:(NSString*) image selectImage:(NSString*) selectedImage
 {
     UIViewController *vc = [[UIViewController alloc] init];
-    vc.view.backgroundColor = [UIColor redColor];
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:image];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
@@ -106,14 +105,15 @@
 
 - (void)setupChildVC:(UIViewController*) vc title: (NSString*) title image:(NSString*) image selectImage:(NSString*) selectedImage
 {
-    vc.view.backgroundColor = [UIColor redColor];
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:image];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     //    [vc0.tabBarItem setTitleTextAttributes:attrs forState:UIControlStateNormal];
     //    [vc0.tabBarItem setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
-    vc.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(100)/100.0 green:arc4random_uniform(100)/100.0 blue:arc4random_uniform(100)/100 alpha:1];
     
+    //只要访问view，就会创建，造成所有的viewcontroller都加载了view
+//    vc.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(100)/100.0 green:arc4random_uniform(100)/100.0 blue:arc4random_uniform(100)/100 alpha:1];
+//
     UINavigationController *navigationVC = [[UINavigationController alloc] initWithRootViewController:vc];
     [self addChildViewController:navigationVC];
 }

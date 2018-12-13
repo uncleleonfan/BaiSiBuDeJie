@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"我的关注";
+    self.navigationItem.title = @"我的关注";
     
 //    UIButton *friendButton = [UIButton buttonWithType:UIButtonTypeCustom];
 //    [friendButton setBackgroundImage:[UIImage imageNamed:@"friendsRecommentIcon"] forState:UIControlStateNormal];
@@ -26,6 +26,9 @@
 //    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:friendButton];
     
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(friendClick)];
+    
+    self.view.backgroundColor = BSBackgroundColor;
+
 }
 
 

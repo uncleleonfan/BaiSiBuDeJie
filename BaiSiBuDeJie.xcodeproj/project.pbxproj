@@ -61,6 +61,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9932E3F121C2512500828DE6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9932E3F221C2517100828DE6 /* Essence */,
+				9932E3F521C251C300828DE6 /* New */,
+				9932E3F421C251B200828DE6 /* FriendTrends */,
+				9932E3F321C251AB00828DE6 /* Me */,
+				9932E3F621C251FD00828DE6 /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9932E3F221C2517100828DE6 /* Essence */ = {
+			isa = PBXGroup;
+			children = (
+				99D1398F21C0F01400EEB428 /* BSEssenceViewController.h */,
+				99D1399021C0F01400EEB428 /* BSEssenceViewController.m */,
+			);
+			path = Essence;
+			sourceTree = "<group>";
+		};
+		9932E3F321C251AB00828DE6 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				99D1399221C0F03400EEB428 /* BSMeViewController.h */,
+				99D1399321C0F03400EEB428 /* BSMeViewController.m */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		9932E3F421C251B200828DE6 /* FriendTrends */ = {
+			isa = PBXGroup;
+			children = (
+				99D1399521C0F04A00EEB428 /* BSFriendTrendsViewController.h */,
+				99D1399621C0F04A00EEB428 /* BSFriendTrendsViewController.m */,
+			);
+			path = FriendTrends;
+			sourceTree = "<group>";
+		};
+		9932E3F521C251C300828DE6 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				99D1399821C0F05900EEB428 /* BSNewViewController.h */,
+				99D1399921C0F05900EEB428 /* BSNewViewController.m */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		9932E3F621C251FD00828DE6 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				9932E3F921C2525000828DE6 /* Controller */,
+				9932E3F821C2524700828DE6 /* View */,
+				9932E3F721C2523300828DE6 /* Category */,
+				99D139A121C0FDC300EEB428 /* PrefixHeader.pch */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		9932E3F721C2523300828DE6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				9932E3EE21C24D0900828DE6 /* UIBarButtonItem+BSExtension.h */,
+				9932E3EF21C24D0900828DE6 /* UIBarButtonItem+BSExtension.m */,
+				99D1399E21C0FC5900EEB428 /* UIView+BSExtension.h */,
+				99D1399F21C0FC5900EEB428 /* UIView+BSExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		9932E3F821C2524700828DE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				99D1399B21C0F5E400EEB428 /* BSTabBar.h */,
+				99D1399C21C0F5E400EEB428 /* BSTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9932E3F921C2525000828DE6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				99D1398C21C0DF9300EEB428 /* BSTabBarViewController.h */,
+				99D1398D21C0DF9300EEB428 /* BSTabBarViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		99917B1F21BE042D00F4C3D9 = {
 			isa = PBXGroup;
 			children = (
@@ -80,28 +168,12 @@
 		99917B2A21BE042D00F4C3D9 /* BaiSiBuDeJie */ = {
 			isa = PBXGroup;
 			children = (
+				9932E3F121C2512500828DE6 /* Classes */,
 				99D1398B21C0BBAE00EEB428 /* Supporting Files */,
 				99917B2B21BE042D00F4C3D9 /* AppDelegate.h */,
 				99917B2C21BE042D00F4C3D9 /* AppDelegate.m */,
 				99917B3921BE042F00F4C3D9 /* Info.plist */,
 				99917B3A21BE042F00F4C3D9 /* main.m */,
-				99D1398C21C0DF9300EEB428 /* BSTabBarViewController.h */,
-				99D1398D21C0DF9300EEB428 /* BSTabBarViewController.m */,
-				99D1398F21C0F01400EEB428 /* BSEssenceViewController.h */,
-				99D1399021C0F01400EEB428 /* BSEssenceViewController.m */,
-				99D1399221C0F03400EEB428 /* BSMeViewController.h */,
-				99D1399321C0F03400EEB428 /* BSMeViewController.m */,
-				9932E3EE21C24D0900828DE6 /* UIBarButtonItem+BSExtension.h */,
-				9932E3EF21C24D0900828DE6 /* UIBarButtonItem+BSExtension.m */,
-				99D1399521C0F04A00EEB428 /* BSFriendTrendsViewController.h */,
-				99D1399621C0F04A00EEB428 /* BSFriendTrendsViewController.m */,
-				99D1399821C0F05900EEB428 /* BSNewViewController.h */,
-				99D1399921C0F05900EEB428 /* BSNewViewController.m */,
-				99D1399B21C0F5E400EEB428 /* BSTabBar.h */,
-				99D1399C21C0F5E400EEB428 /* BSTabBar.m */,
-				99D1399E21C0FC5900EEB428 /* UIView+BSExtension.h */,
-				99D1399F21C0FC5900EEB428 /* UIView+BSExtension.m */,
-				99D139A121C0FDC300EEB428 /* PrefixHeader.pch */,
 			);
 			path = BaiSiBuDeJie;
 			sourceTree = "<group>";
@@ -333,7 +405,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 735FD6WCKP;
-				GCC_PREFIX_HEADER = /Users/byex/Desktop/BaiSiBuDeJie/BaiSiBuDeJie/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/byex/Desktop/BaiSiBuDeJie/BaiSiBuDeJie/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = BaiSiBuDeJie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -352,7 +424,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 735FD6WCKP;
-				GCC_PREFIX_HEADER = /Users/byex/Desktop/BaiSiBuDeJie/BaiSiBuDeJie/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/byex/Desktop/BaiSiBuDeJie/BaiSiBuDeJie/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = BaiSiBuDeJie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

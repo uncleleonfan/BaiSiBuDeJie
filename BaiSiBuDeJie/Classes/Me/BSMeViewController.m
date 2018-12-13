@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"我的";
+    self.navigationItem.title = @"我的";
     
     
 //    UIButton *settingButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -39,6 +39,9 @@
                                                 settingItem,
                                                 nightItem
                                                 ];
+    
+    self.view.backgroundColor = BSBackgroundColor;
+
 }
 
 - (void)settingClick

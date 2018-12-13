@@ -27,6 +27,8 @@
 //    [tagButton addTarget:self action:@selector(tagClick) forControlEvents:UIControlEventTouchUpInside];
 //    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:tagButton];
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"MainTagSubIcon" highImage:@"MainTagSubClickIcon" target:self action:@selector(tagClick)];
+//    self.view.backgroundColor = BSRGBColor(223, 223, 223);
+    self.view.backgroundColor = BSBackgroundColor;
     
 }
 
