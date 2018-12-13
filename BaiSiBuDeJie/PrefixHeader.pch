@@ -19,4 +19,6 @@
 #define BSLog(...)
 #endif
 
+#define BSLogFunc BSLog(@"%s", __func__);
+
 #endif /* PrefixHeader_pch */

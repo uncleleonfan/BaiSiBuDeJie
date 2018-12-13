@@ -7,6 +7,7 @@
 //
 
 #import "BSMeViewController.h"
+#import "UIBarButtonItem+BSExtension.h"
 
 @interface BSMeViewController ()
 
@@ -16,17 +17,40 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.title = @"我的";
+    
+    
+//    UIButton *settingButton = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [settingButton setBackgroundImage:[UIImage imageNamed:@"mine-setting-icon"] forState:UIControlStateNormal];
+//    [settingButton setBackgroundImage:[UIImage imageNamed:@"mine-setting-icon-click"] forState:UIControlStateHighlighted];
+//    settingButton.size = settingButton.currentBackgroundImage.size;
+//    [settingButton addTarget:self action:@selector(settingClick) forControlEvents:UIControlEventTouchUpInside];
+//
+//    UIButton *nightButton = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [nightButton setBackgroundImage:[UIImage imageNamed:@"mine-moon-icon"] forState:UIControlStateNormal];
+//    [nightButton setBackgroundImage:[UIImage imageNamed:@"mine-moon-icon-click"] forState:UIControlStateHighlighted];
+//    nightButton.size = nightButton.currentBackgroundImage.size;
+//    [nightButton addTarget:self action:@selector(nightClick) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem *settingItem = [UIBarButtonItem itemWithImage:@"mine-setting-icon" highImage:@"mine-setting-icon-click" target:self action:@selector(settingClick)];
+    UIBarButtonItem *nightItem = [UIBarButtonItem itemWithImage:@"mine-moon-icon" highImage:@"mine-moon-icon-click" target:self action:@selector(nightClick)];
+    
+    self.navigationItem.rightBarButtonItems = @[
+                                                settingItem,
+                                                nightItem
+                                                ];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)settingClick
+{
+    BSLogFunc
 }
-*/
+
+- (void)nightClick
+{
+    BSLogFunc
+}
+
+
 
 @end

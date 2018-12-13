@@ -7,6 +7,7 @@
 //
 
 #import "BSEssenceViewController.h"
+#import "UIBarButtonItem+BSExtension.h"
 
 @interface BSEssenceViewController ()
 
@@ -17,12 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
-    UIButton *tagButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [tagButton setBackgroundImage:[UIImage imageNamed:@"MainTagSubIcon"] forState:UIControlStateNormal];
-    [tagButton setBackgroundImage:[UIImage imageNamed:@"MainTagSubClickIcon"] forState:UIControlStateHighlighted];
-    tagButton.size = tagButton.currentBackgroundImage.size;
-    [tagButton addTarget:self action:@selector(tagClick) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:tagButton];
+    
+    //导航栏左边按钮
+//    UIButton *tagButton = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [tagButton setBackgroundImage:[UIImage imageNamed:@"MainTagSubIcon"] forState:UIControlStateNormal];
+//    [tagButton setBackgroundImage:[UIImage imageNamed:@"MainTagSubClickIcon"] forState:UIControlStateHighlighted];
+//    tagButton.size = tagButton.currentBackgroundImage.size;
+//    [tagButton addTarget:self action:@selector(tagClick) forControlEvents:UIControlEventTouchUpInside];
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:tagButton];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"MainTagSubIcon" highImage:@"MainTagSubClickIcon" target:self action:@selector(tagClick)];
     
 }
 
