@@ -7,6 +7,7 @@
 //
 
 #import "BSRecommendViewController.h"
+#import "AFNetworking.h"
 
 @interface BSRecommendViewController ()
 
@@ -17,6 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"推荐关注";
+    
+    [[AFHTTPSessionManager manager] GET:@"http://gank.io/api/xiandu/categories" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id _Nonnull responseObject){
+        BSLog(@"log success");
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error){
+        BSLog(@"log failure");
+    }];
+    
 }
 
 @end

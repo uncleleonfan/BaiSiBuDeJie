@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B52D1BE67B88ABD20910041 /* libPods-BaiSiBuDeJie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5E6AD7638E186FBBD10D54 /* libPods-BaiSiBuDeJie.a */; };
 		9921126721D1D5C100E165EC /* BSFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9921126621D1D5C100E165EC /* BSFriendTrendsViewController.xib */; };
 		9932E3F021C24D0900828DE6 /* UIBarButtonItem+BSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9932E3EF21C24D0900828DE6 /* UIBarButtonItem+BSExtension.m */; };
 		998CF9BF21D0CBEA00DD387A /* BSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 998CF9BE21D0CBEA00DD387A /* BSNavigationController.m */; };
@@ -28,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0032BFDF1C98193A1C2CB33E /* Pods-BaiSiBuDeJie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiSiBuDeJie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaiSiBuDeJie/Pods-BaiSiBuDeJie.debug.xcconfig"; sourceTree = "<group>"; };
+		46F35EFD974C1BDE2584ED78 /* Pods-BaiSiBuDeJie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiSiBuDeJie.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaiSiBuDeJie/Pods-BaiSiBuDeJie.release.xcconfig"; sourceTree = "<group>"; };
+		7D5E6AD7638E186FBBD10D54 /* libPods-BaiSiBuDeJie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaiSiBuDeJie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9921126621D1D5C100E165EC /* BSFriendTrendsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BSFriendTrendsViewController.xib; sourceTree = "<group>"; };
 		9932E3EE21C24D0900828DE6 /* UIBarButtonItem+BSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BSExtension.h"; sourceTree = "<group>"; };
 		9932E3EF21C24D0900828DE6 /* UIBarButtonItem+BSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+BSExtension.m"; sourceTree = "<group>"; };
@@ -68,12 +72,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B52D1BE67B88ABD20910041 /* libPods-BaiSiBuDeJie.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14B141BB8858D788F7E98FD8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0032BFDF1C98193A1C2CB33E /* Pods-BaiSiBuDeJie.debug.xcconfig */,
+				46F35EFD974C1BDE2584ED78 /* Pods-BaiSiBuDeJie.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3A145FA718B68B4848DE15AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D5E6AD7638E186FBBD10D54 /* libPods-BaiSiBuDeJie.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9932E3F121C2512500828DE6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +197,8 @@
 			children = (
 				99917B2A21BE042D00F4C3D9 /* BaiSiBuDeJie */,
 				99917B2921BE042D00F4C3D9 /* Products */,
+				14B141BB8858D788F7E98FD8 /* Pods */,
+				3A145FA718B68B4848DE15AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -216,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99917B3E21BE042F00F4C3D9 /* Build configuration list for PBXNativeTarget "BaiSiBuDeJie" */;
 			buildPhases = (
+				DA6EEFD20AB53FD9D71F51A2 /* [CP] Check Pods Manifest.lock */,
 				99917B2421BE042D00F4C3D9 /* Sources */,
 				99917B2521BE042D00F4C3D9 /* Frameworks */,
 				99917B2621BE042D00F4C3D9 /* Resources */,
+				18D600AD8D4A6BED5BD4EC3D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -276,6 +302,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18D600AD8D4A6BED5BD4EC3D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BaiSiBuDeJie/Pods-BaiSiBuDeJie-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaiSiBuDeJie/Pods-BaiSiBuDeJie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA6EEFD20AB53FD9D71F51A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaiSiBuDeJie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		99917B2421BE042D00F4C3D9 /* Sources */ = {
@@ -426,6 +499,7 @@
 		};
 		99917B3F21BE042F00F4C3D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0032BFDF1C98193A1C2CB33E /* Pods-BaiSiBuDeJie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -437,6 +511,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = leon.io.BaiSiBuDeJie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,6 +520,7 @@
 		};
 		99917B4021BE042F00F4C3D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46F35EFD974C1BDE2584ED78 /* Pods-BaiSiBuDeJie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -456,6 +532,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = leon.io.BaiSiBuDeJie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
