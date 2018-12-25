@@ -8,6 +8,7 @@
 
 #import "BSMeViewController.h"
 #import "UIBarButtonItem+BSExtension.h"
+#import "BSTestViewController.h"
 
 @interface BSMeViewController ()
 
@@ -54,6 +55,12 @@
     BSLogFunc
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    BSTestViewController *vc = [[BSTestViewController alloc]init];
+    vc.view.backgroundColor = BSRGBColor(200, 100, 50);
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 
 @end

@@ -12,6 +12,7 @@
 #import "BSEssenceViewController.h"
 #import "BSFriendTrendsViewController.h"
 #import "BSTabBar.h"
+#import "BSNavigationController.h"
 
 @interface BSTabBarViewController ()
 
@@ -19,8 +20,8 @@
 
 @implementation BSTabBarViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
++ (void)initialize
+{
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
     attrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
     attrs[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
@@ -32,6 +33,21 @@
     UITabBarItem *item = [UITabBarItem appearance];
     [item setTitleTextAttributes:attrs forState:UIControlStateNormal];
     [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+//    NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
+//    attrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
+//    attrs[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
+//
+//    NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
+//    selectedAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
+//    selectedAttrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
+//
+//    UITabBarItem *item = [UITabBarItem appearance];
+//    [item setTitleTextAttributes:attrs forState:UIControlStateNormal];
+//    [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
     
     [self setupChildVC:[[BSEssenceViewController alloc] init] title: @"精华" image:@"tabBar_essence_icon" selectImage:@"tabBar_essence_click_icon"];
     [self setupChildVC:[[BSNewViewController alloc] init] title:@"新帖" image:@"tabBar_new_icon" selectImage:@"tabBar_new_click_icon"];
@@ -114,7 +130,7 @@
     //只要访问view，就会创建，造成所有的viewcontroller都加载了view
 //    vc.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(100)/100.0 green:arc4random_uniform(100)/100.0 blue:arc4random_uniform(100)/100 alpha:1];
 //
-    UINavigationController *navigationVC = [[UINavigationController alloc] initWithRootViewController:vc];
+    BSNavigationController *navigationVC = [[BSNavigationController alloc] initWithRootViewController:vc];
     [self addChildViewController:navigationVC];
 }
 

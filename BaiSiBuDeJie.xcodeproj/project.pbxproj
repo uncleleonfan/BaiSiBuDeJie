@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9932E3F021C24D0900828DE6 /* UIBarButtonItem+BSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9932E3EF21C24D0900828DE6 /* UIBarButtonItem+BSExtension.m */; };
+		998CF9BF21D0CBEA00DD387A /* BSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 998CF9BE21D0CBEA00DD387A /* BSNavigationController.m */; };
+		998CF9C221D0CFC700DD387A /* BSTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 998CF9C121D0CFC700DD387A /* BSTestViewController.m */; };
 		99917B2D21BE042D00F4C3D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99917B2C21BE042D00F4C3D9 /* AppDelegate.m */; };
 		99917B3521BE042F00F4C3D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99917B3421BE042F00F4C3D9 /* Assets.xcassets */; };
 		99917B3821BE042F00F4C3D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99917B3621BE042F00F4C3D9 /* LaunchScreen.storyboard */; };
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		9932E3EE21C24D0900828DE6 /* UIBarButtonItem+BSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BSExtension.h"; sourceTree = "<group>"; };
 		9932E3EF21C24D0900828DE6 /* UIBarButtonItem+BSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+BSExtension.m"; sourceTree = "<group>"; };
+		998CF9BD21D0CBEA00DD387A /* BSNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSNavigationController.h; sourceTree = "<group>"; };
+		998CF9BE21D0CBEA00DD387A /* BSNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSNavigationController.m; sourceTree = "<group>"; };
+		998CF9C021D0CFC700DD387A /* BSTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTestViewController.h; sourceTree = "<group>"; };
+		998CF9C121D0CFC700DD387A /* BSTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSTestViewController.m; sourceTree = "<group>"; };
 		99917B2821BE042D00F4C3D9 /* BaiSiBuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiSiBuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99917B2B21BE042D00F4C3D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		99917B2C21BE042D00F4C3D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -145,6 +151,10 @@
 			children = (
 				99D1398C21C0DF9300EEB428 /* BSTabBarViewController.h */,
 				99D1398D21C0DF9300EEB428 /* BSTabBarViewController.m */,
+				998CF9BD21D0CBEA00DD387A /* BSNavigationController.h */,
+				998CF9BE21D0CBEA00DD387A /* BSNavigationController.m */,
+				998CF9C021D0CFC700DD387A /* BSTestViewController.h */,
+				998CF9C121D0CFC700DD387A /* BSTestViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -260,7 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				99D1398E21C0DF9300EEB428 /* BSTabBarViewController.m in Sources */,
+				998CF9C221D0CFC700DD387A /* BSTestViewController.m in Sources */,
 				9932E3F021C24D0900828DE6 /* UIBarButtonItem+BSExtension.m in Sources */,
+				998CF9BF21D0CBEA00DD387A /* BSNavigationController.m in Sources */,
 				99D1399721C0F04A00EEB428 /* BSFriendTrendsViewController.m in Sources */,
 				99D1399A21C0F05900EEB428 /* BSNewViewController.m in Sources */,
 				99917B3B21BE042F00F4C3D9 /* main.m in Sources */,
