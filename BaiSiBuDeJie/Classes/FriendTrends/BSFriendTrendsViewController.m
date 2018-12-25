@@ -8,6 +8,8 @@
 
 #import "BSFriendTrendsViewController.h"
 #import "UIBarButtonItem+BSExtension.h"
+#import "BSRecommendViewController.h"
+
 @interface BSFriendTrendsViewController ()
 
 @end
@@ -36,5 +38,7 @@
 {
 //    BSLog(@"friend click");
     BSLogFunc
+    BSRecommendViewController *vc = [[BSRecommendViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 @end

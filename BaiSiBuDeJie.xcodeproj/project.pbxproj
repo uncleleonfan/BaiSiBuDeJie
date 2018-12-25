@@ -16,6 +16,8 @@
 		99917B3821BE042F00F4C3D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99917B3621BE042F00F4C3D9 /* LaunchScreen.storyboard */; };
 		99917B3B21BE042F00F4C3D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99917B3A21BE042F00F4C3D9 /* main.m */; };
 		99917B4221BE044A00F4C3D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99917B4121BE044900F4C3D9 /* Images.xcassets */; };
+		99C53C7721D27E830027261F /* BSRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C53C7521D27E830027261F /* BSRecommendViewController.m */; };
+		99C53C7821D27E830027261F /* BSRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99C53C7621D27E830027261F /* BSRecommendViewController.xib */; };
 		99D1398E21C0DF9300EEB428 /* BSTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D1398D21C0DF9300EEB428 /* BSTabBarViewController.m */; };
 		99D1399121C0F01400EEB428 /* BSEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D1399021C0F01400EEB428 /* BSEssenceViewController.m */; };
 		99D1399421C0F03400EEB428 /* BSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D1399321C0F03400EEB428 /* BSMeViewController.m */; };
@@ -41,6 +43,9 @@
 		99917B3921BE042F00F4C3D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99917B3A21BE042F00F4C3D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		99917B4121BE044900F4C3D9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		99C53C7421D27E830027261F /* BSRecommendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSRecommendViewController.h; sourceTree = "<group>"; };
+		99C53C7521D27E830027261F /* BSRecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSRecommendViewController.m; sourceTree = "<group>"; };
+		99C53C7621D27E830027261F /* BSRecommendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BSRecommendViewController.xib; sourceTree = "<group>"; };
 		99D1398C21C0DF9300EEB428 /* BSTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTabBarViewController.h; sourceTree = "<group>"; };
 		99D1398D21C0DF9300EEB428 /* BSTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSTabBarViewController.m; sourceTree = "<group>"; };
 		99D1398F21C0F01400EEB428 /* BSEssenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSEssenceViewController.h; sourceTree = "<group>"; };
@@ -105,6 +110,9 @@
 				99D1399521C0F04A00EEB428 /* BSFriendTrendsViewController.h */,
 				99D1399621C0F04A00EEB428 /* BSFriendTrendsViewController.m */,
 				9921126621D1D5C100E165EC /* BSFriendTrendsViewController.xib */,
+				99C53C7421D27E830027261F /* BSRecommendViewController.h */,
+				99C53C7521D27E830027261F /* BSRecommendViewController.m */,
+				99C53C7621D27E830027261F /* BSRecommendViewController.xib */,
 			);
 			path = FriendTrends;
 			sourceTree = "<group>";
@@ -262,6 +270,7 @@
 				99917B3821BE042F00F4C3D9 /* LaunchScreen.storyboard in Resources */,
 				99917B4221BE044A00F4C3D9 /* Images.xcassets in Resources */,
 				9921126721D1D5C100E165EC /* BSFriendTrendsViewController.xib in Resources */,
+				99C53C7821D27E830027261F /* BSRecommendViewController.xib in Resources */,
 				99917B3521BE042F00F4C3D9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +291,7 @@
 				99917B3B21BE042F00F4C3D9 /* main.m in Sources */,
 				99D1399121C0F01400EEB428 /* BSEssenceViewController.m in Sources */,
 				99D139A021C0FC5900EEB428 /* UIView+BSExtension.m in Sources */,
+				99C53C7721D27E830027261F /* BSRecommendViewController.m in Sources */,
 				99D1399421C0F03400EEB428 /* BSMeViewController.m in Sources */,
 				99D1399D21C0F5E400EEB428 /* BSTabBar.m in Sources */,
 				99917B2D21BE042D00F4C3D9 /* AppDelegate.m in Sources */,
