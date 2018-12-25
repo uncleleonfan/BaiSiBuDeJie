@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9921126721D1D5C100E165EC /* BSFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9921126621D1D5C100E165EC /* BSFriendTrendsViewController.xib */; };
 		9932E3F021C24D0900828DE6 /* UIBarButtonItem+BSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9932E3EF21C24D0900828DE6 /* UIBarButtonItem+BSExtension.m */; };
 		998CF9BF21D0CBEA00DD387A /* BSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 998CF9BE21D0CBEA00DD387A /* BSNavigationController.m */; };
 		998CF9C221D0CFC700DD387A /* BSTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 998CF9C121D0CFC700DD387A /* BSTestViewController.m */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9921126621D1D5C100E165EC /* BSFriendTrendsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BSFriendTrendsViewController.xib; sourceTree = "<group>"; };
 		9932E3EE21C24D0900828DE6 /* UIBarButtonItem+BSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BSExtension.h"; sourceTree = "<group>"; };
 		9932E3EF21C24D0900828DE6 /* UIBarButtonItem+BSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+BSExtension.m"; sourceTree = "<group>"; };
 		998CF9BD21D0CBEA00DD387A /* BSNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSNavigationController.h; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				99D1399521C0F04A00EEB428 /* BSFriendTrendsViewController.h */,
 				99D1399621C0F04A00EEB428 /* BSFriendTrendsViewController.m */,
+				9921126621D1D5C100E165EC /* BSFriendTrendsViewController.xib */,
 			);
 			path = FriendTrends;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				99917B3821BE042F00F4C3D9 /* LaunchScreen.storyboard in Resources */,
 				99917B4221BE044A00F4C3D9 /* Images.xcassets in Resources */,
+				9921126721D1D5C100E165EC /* BSFriendTrendsViewController.xib in Resources */,
 				99917B3521BE042F00F4C3D9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
