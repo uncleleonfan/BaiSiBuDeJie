@@ -10,6 +10,9 @@
 		4B52D1BE67B88ABD20910041 /* libPods-BaiSiBuDeJie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5E6AD7638E186FBBD10D54 /* libPods-BaiSiBuDeJie.a */; };
 		9921126721D1D5C100E165EC /* BSFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9921126621D1D5C100E165EC /* BSFriendTrendsViewController.xib */; };
 		9932E3F021C24D0900828DE6 /* UIBarButtonItem+BSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9932E3EF21C24D0900828DE6 /* UIBarButtonItem+BSExtension.m */; };
+		997345F121D476F000E1458E /* BSRecommendCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 997345F021D476F000E1458E /* BSRecommendCategory.m */; };
+		997345F621D4826700E1458E /* BSRecommendCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 997345F421D4826700E1458E /* BSRecommendCategoryTableViewCell.m */; };
+		997345F721D4826700E1458E /* BSRecommendCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 997345F521D4826700E1458E /* BSRecommendCategoryTableViewCell.xib */; };
 		998CF9BF21D0CBEA00DD387A /* BSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 998CF9BE21D0CBEA00DD387A /* BSNavigationController.m */; };
 		998CF9C221D0CFC700DD387A /* BSTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 998CF9C121D0CFC700DD387A /* BSTestViewController.m */; };
 		99917B2D21BE042D00F4C3D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99917B2C21BE042D00F4C3D9 /* AppDelegate.m */; };
@@ -35,6 +38,11 @@
 		9921126621D1D5C100E165EC /* BSFriendTrendsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BSFriendTrendsViewController.xib; sourceTree = "<group>"; };
 		9932E3EE21C24D0900828DE6 /* UIBarButtonItem+BSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BSExtension.h"; sourceTree = "<group>"; };
 		9932E3EF21C24D0900828DE6 /* UIBarButtonItem+BSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+BSExtension.m"; sourceTree = "<group>"; };
+		997345EF21D476F000E1458E /* BSRecommendCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSRecommendCategory.h; sourceTree = "<group>"; };
+		997345F021D476F000E1458E /* BSRecommendCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSRecommendCategory.m; sourceTree = "<group>"; };
+		997345F321D4826700E1458E /* BSRecommendCategoryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSRecommendCategoryTableViewCell.h; sourceTree = "<group>"; };
+		997345F421D4826700E1458E /* BSRecommendCategoryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSRecommendCategoryTableViewCell.m; sourceTree = "<group>"; };
+		997345F521D4826700E1458E /* BSRecommendCategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BSRecommendCategoryTableViewCell.xib; sourceTree = "<group>"; };
 		998CF9BD21D0CBEA00DD387A /* BSNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSNavigationController.h; sourceTree = "<group>"; };
 		998CF9BE21D0CBEA00DD387A /* BSNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSNavigationController.m; sourceTree = "<group>"; };
 		998CF9C021D0CFC700DD387A /* BSTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTestViewController.h; sourceTree = "<group>"; };
@@ -129,12 +137,9 @@
 		9932E3F421C251B200828DE6 /* FriendTrends */ = {
 			isa = PBXGroup;
 			children = (
-				99D1399521C0F04A00EEB428 /* BSFriendTrendsViewController.h */,
-				99D1399621C0F04A00EEB428 /* BSFriendTrendsViewController.m */,
-				9921126621D1D5C100E165EC /* BSFriendTrendsViewController.xib */,
-				99C53C7421D27E830027261F /* BSRecommendViewController.h */,
-				99C53C7521D27E830027261F /* BSRecommendViewController.m */,
-				99C53C7621D27E830027261F /* BSRecommendViewController.xib */,
+				997345F221D4822A00E1458E /* View */,
+				997345EE21D476BB00E1458E /* Model */,
+				997345ED21D476A100E1458E /* Controlller */,
 			);
 			path = FriendTrends;
 			sourceTree = "<group>";
@@ -190,6 +195,38 @@
 				998CF9C121D0CFC700DD387A /* BSTestViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		997345ED21D476A100E1458E /* Controlller */ = {
+			isa = PBXGroup;
+			children = (
+				99D1399521C0F04A00EEB428 /* BSFriendTrendsViewController.h */,
+				99D1399621C0F04A00EEB428 /* BSFriendTrendsViewController.m */,
+				9921126621D1D5C100E165EC /* BSFriendTrendsViewController.xib */,
+				99C53C7421D27E830027261F /* BSRecommendViewController.h */,
+				99C53C7521D27E830027261F /* BSRecommendViewController.m */,
+				99C53C7621D27E830027261F /* BSRecommendViewController.xib */,
+			);
+			path = Controlller;
+			sourceTree = "<group>";
+		};
+		997345EE21D476BB00E1458E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				997345EF21D476F000E1458E /* BSRecommendCategory.h */,
+				997345F021D476F000E1458E /* BSRecommendCategory.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		997345F221D4822A00E1458E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				997345F321D4826700E1458E /* BSRecommendCategoryTableViewCell.h */,
+				997345F421D4826700E1458E /* BSRecommendCategoryTableViewCell.m */,
+				997345F521D4826700E1458E /* BSRecommendCategoryTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		99917B1F21BE042D00F4C3D9 = {
@@ -298,6 +335,7 @@
 				9921126721D1D5C100E165EC /* BSFriendTrendsViewController.xib in Resources */,
 				99C53C7821D27E830027261F /* BSRecommendViewController.xib in Resources */,
 				99917B3521BE042F00F4C3D9 /* Assets.xcassets in Resources */,
+				997345F721D4826700E1458E /* BSRecommendCategoryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +400,8 @@
 				99D1399721C0F04A00EEB428 /* BSFriendTrendsViewController.m in Sources */,
 				99D1399A21C0F05900EEB428 /* BSNewViewController.m in Sources */,
 				99917B3B21BE042F00F4C3D9 /* main.m in Sources */,
+				997345F121D476F000E1458E /* BSRecommendCategory.m in Sources */,
+				997345F621D4826700E1458E /* BSRecommendCategoryTableViewCell.m in Sources */,
 				99D1399121C0F01400EEB428 /* BSEssenceViewController.m in Sources */,
 				99D139A021C0FC5900EEB428 /* UIView+BSExtension.m in Sources */,
 				99C53C7721D27E830027261F /* BSRecommendViewController.m in Sources */,

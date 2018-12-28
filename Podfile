@@ -5,6 +5,7 @@ target "BaiSiBuDeJie" do # 项目工程名
 pod "AFNetworking"
 pod "SDWebImage"
 pod "SVProgressHUD"
+pod "MJExtension"
 
 end
 
